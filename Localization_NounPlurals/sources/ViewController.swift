@@ -5,17 +5,12 @@
 
 import UIKit
 
-enum LocalizationKeys: String {
-    case JohnPineapples = "johns pineapples count"
-    case JohnPineapplesComment = "Johns pineapples count string format to be found in Localized.stringsdict"
-}
-
 class ViewController: UIViewController {
     @IBOutlet weak var localizationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
         localizationLabel.text =
               getStrCountPineapplesInJonh(count: 0) + "\n"
             + getStrCountPineapplesInJonh(count: 1) + "\n"
